@@ -1,34 +1,42 @@
 ---
-import AppFooter from "../components/AppFooter.astro";
-import AppHeader from "../components/AppHeader.astro"
+import AppFooter from '../components/AppFooter.astro';
+import AppHeader from '../components/AppHeader.astro';
 ---
-
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<meta name="description" content="Template built with tailwindcss using Tailus blocks v2">
-		<title>Tailus astro theme</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content="Ezgi Akkaya" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Ezgi Akkaya</title>
 
-		<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet">
-	</head>
-	<body class="bg-white dark:bg-gray-900">
-		<AppHeader/>
-		<slot />
-		<AppFooter/>
-	</body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-white dark:bg-gray-900">
+    <!-- <AppHeader/> -->
+    <slot />
+    <AppFooter />
+  </body>
 </html>
 <style>
-	html {
-		font-family: Urbanist, sans-serif;
-		scroll-behavior: smooth;
-	}
+  html {
+    font-family: Urbanist, sans-serif;
+    scroll-behavior: smooth;
+  }
 
-	body {
-		margin: 0;
-	}
+  body {
+    margin: 0;
+  }
 </style>
